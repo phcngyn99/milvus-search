@@ -12,7 +12,7 @@ cook:
 	cd ${DEPLOYMENT_DIR} && $(COMPOSE) down -v --remove-orphans
 
 ps:
-	cd ${DEPLOYMENT_DIR} && $(COMPOSE) down ps
+	cd ${DEPLOYMENT_DIR} && $(COMPOSE) ps
 
 restart: down run
 	
